@@ -22,12 +22,11 @@ for ip in ipsfile:
         #Disconnect from the switch
         device.disconnect()
 
-        #Parse out info relative to port secuirty and write to output file
-        print(ip)
+        #Print command output
         print(writemem)
 
     except:
-        #Note that the connection was unsuccessful
+        #Note if the connection was unsuccessful
         print("Failed to connect to " + ip)
 
 ipsfile.close()
